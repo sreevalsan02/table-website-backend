@@ -15,6 +15,7 @@ fsspec==2024.3.1
 future==1.0.0
 gevent==24.2.1
 greenlet==3.0.3
+gunicorn==21.2.0
 idna==3.6
 itsdangerous==2.1.2
 Jinja2==3.1.3
