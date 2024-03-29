@@ -5,6 +5,7 @@ from PIL import Image
 from flask import Flask, request, redirect, url_for,send_file
 from flask_cors import CORS
 app = Flask(__name__)
+model = RTDETR('best.pt')
 
 CORS(app)
 
@@ -13,7 +14,6 @@ CORS(app)
 def table_image():
     if request.method =='POST':
         img_file = request.files['the_file']
-        model = RTDETR('best.pt')
         img = Image.open(img_file)
         results = model(img)
         boxes = results[0].boxes
