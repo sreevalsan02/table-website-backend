@@ -38,5 +38,6 @@ def process_image(file):
     y_end = int(lis[3])
 
     im1 = img.crop((x,y,x_end,y_end))
+    
     return im1
 
