@@ -41,3 +41,5 @@ def process_image(file):
     
     return im1
 
+if __name__ =="__main__":
+    app.run()
