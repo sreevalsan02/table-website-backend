@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8080
 
 # Run the application.
-CMD exec gunicorn --bind :8080 --workers 1 --timeout 0 --threads 8 app:app
+CMD exec gunicorn --bind :8080 --workers 1 --timeout 600 app:app
