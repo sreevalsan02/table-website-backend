@@ -26,7 +26,6 @@ import torch
 import shutil
 import re
 import pytesseract
-from paddleocr import PaddleOCR
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 # from openpyxl.drawing.image import Image as pyxl_image
@@ -86,8 +85,7 @@ def table_detect(file):
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-# Function to extract text using PaddleOCR
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
+
 
 class MaxResize(object):
     def __init__(self, max_size=800):
