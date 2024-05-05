@@ -1,2 +1,4 @@
-./my_env1
-./__pycache
+my_env/
+table_detection.pt
+table_structure.pt
+__pycache__/
